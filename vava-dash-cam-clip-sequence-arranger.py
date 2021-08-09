@@ -86,6 +86,7 @@ class ArrangeVavaDashCamClips(bpy.types.Operator):
         return {'FINISHED'}
 
 def menu_func(self, context):
+    self.layout.row().separator()
     self.layout.operator(ArrangeVavaDashCamClips.bl_idname)
 
 def register():
